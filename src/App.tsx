@@ -1,5 +1,11 @@
+import Router from './shared/Router';
+
 function App() {
-  return <h1 className="text-3xl text-red-600">hi</h1>;
+  return (
+    <>
+      <Router />
+    </>
+  );
 }
 
 export default App;
