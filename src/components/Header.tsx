@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <nav>
-      <ul>
+      <ul className="flex gap-6">
         <li>
           <Link to="/">sohyeon kim</Link>
         </li>
