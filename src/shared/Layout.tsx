@@ -3,10 +3,10 @@ import Header from '../components/Header';
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
-    <>
+    <main className="w-[80vw] mx-auto bg-gray-200">
       <Header />
-      <main>{children}</main>
-    </>
+      <article>{children}</article>
+    </main>
   );
 };
 
