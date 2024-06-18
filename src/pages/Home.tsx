@@ -14,8 +14,12 @@ const Home = () => {
         정한다.
       </p>
       <main>
-        <article>
-          <Link to="#" onClick={handleMailto}>
+        <article className="flex flex-col gap-4">
+          <Link
+            to="#"
+            onClick={handleMailto}
+            className="underline underline-offset-4"
+          >
             aotoyae@gmail.com
           </Link>
           <InfoLink url="https://aotoyae.tistory.com/">blog</InfoLink>
