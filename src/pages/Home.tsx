@@ -40,9 +40,29 @@ const Home = () => {
           <InfoLink url="https://aotoyae.tistory.com/">blog</InfoLink>
           <InfoLink url="https://github.com/aotoyae">github</InfoLink>
         </aside>
-        <main className="flex w-[70%]">
+        <main className="flex w-[70%] gap-4">
           <section className="w-[70%]">
-            <h4>학력</h4>
+            <article>
+              <h4>학력</h4>
+              <div>
+                <h5>
+                  2022
+                  <br />
+                  2017
+                </h5>
+                <h5>협성대학교 산업디자인학과</h5>
+                <p>
+                  졸업전시위원회 도록팀 : 도록 레이아웃 디자인 및 인쇄 과정 담당
+                  <br />
+                  예술대학 학생회 문화부장 : 예술대 이벤트 기획 및 자료 제작
+                  <br />
+                  교내 SNS 홍보단 협성대스타 : 교내 정보 콘텐츠 제작 및 포스팅,
+                  교내 이벤트 기획 및 홍보물 제작
+                </p>
+              </div>
+            </article>
+            <h4>경력</h4>
+            <h4>기타 활동</h4>
           </section>
           <section className="flex flex-col gap-5">
             <h4>스킬</h4>
