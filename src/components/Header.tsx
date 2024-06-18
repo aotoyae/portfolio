@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { handleMailto } from '../utils/handleMailto';
 
 const Header = () => {
   return (
@@ -9,7 +10,11 @@ const Header = () => {
       <li>
         <Link to="/project">project</Link>
       </li>
-      <li>contact</li>
+      <li>
+        <Link to="#" onClick={handleMailto}>
+          contact
+        </Link>
+      </li>
     </ul>
   );
 };
