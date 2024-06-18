@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import { handleMailto } from '../utils/handleMailto';
+import ContactLink from '../components/ContactLink';
 
 const Home = () => {
   return (
@@ -14,15 +14,11 @@ const Home = () => {
       </p>
       <main>
         <article>
-          <Link to="#" onClick={handleMailto} target="_blank">
+          <ContactLink url="#" onClick={handleMailto}>
             aotoyae@gmail.com
-          </Link>
-          <Link to="https://aotoyae.tistory.com/" target="_blank">
-            blog
-          </Link>
-          <Link to="https://github.com/aotoyae" target="_blank">
-            github
-          </Link>
+          </ContactLink>
+          <ContactLink url="https://aotoyae.tistory.com/">blog</ContactLink>
+          <ContactLink url="https://github.com/aotoyae">github</ContactLink>
         </article>
       </main>
     </>
