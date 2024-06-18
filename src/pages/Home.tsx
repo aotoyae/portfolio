@@ -1,5 +1,11 @@
 import { Link } from 'react-router-dom';
 
+const handleMailto = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+  // 제네릭 타입 파라미터(처음은 이벤트가 발생하는 요소 <a></a>, 다음은 이벤트의 타입)
+  e.preventDefault();
+  window.location.href = 'mailto:aotoyae@gamil.com';
+};
+
 const Home = () => {
   return (
     <>
@@ -13,7 +19,7 @@ const Home = () => {
       </p>
       <main>
         <article>
-          <Link to="" target="_blank">
+          <Link to="#" onClick={handleMailto} target="_blank">
             aotoyae@gmail.com
           </Link>
           <Link to="https://aotoyae.tistory.com/" target="_blank">
