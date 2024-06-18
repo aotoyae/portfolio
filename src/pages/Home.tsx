@@ -3,8 +3,23 @@ import InfoLink from '../components/InfoLink';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
+  const skills = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'TypeScirpt',
+    'React',
+    'Redux',
+    'Tanstack Query',
+    'Styled-Commponents',
+    'Tailwind CSS',
+    'Next.js',
+    'Jotai',
+    'Jira',
+  ];
+
   return (
-    <main className="flex flex-col gap-20">
+    <div className="flex flex-col gap-20">
       <p className="pl-[30%] mt-4">
         자기소개.. 국가는 과학기술의 혁신과 정보 및 인력의 개발을 통하여
         국민경제의 발전에 노력하여야 한다. 누구든지 체포 또는 구속을 당한 때에는
@@ -13,8 +28,8 @@ const Home = () => {
         붙인다. 각급 선거관리위원회의 조직·직무범위 기타 필요한 사항은 법률로
         정한다.
       </p>
-      <article>
-        <section className="flex flex-col gap-4">
+      <div className="flex">
+        <aside className="w-[30%] flex flex-col gap-4">
           <Link
             to="#"
             onClick={handleMailto}
@@ -24,9 +39,20 @@ const Home = () => {
           </Link>
           <InfoLink url="https://aotoyae.tistory.com/">blog</InfoLink>
           <InfoLink url="https://github.com/aotoyae">github</InfoLink>
-        </section>
-      </article>
-    </main>
+        </aside>
+        <main className="flex w-[70%]">
+          <section className="w-[70%]">
+            <h4>학력</h4>
+          </section>
+          <section className="flex flex-col gap-5">
+            <h4>스킬</h4>
+            {skills.map((skill) => (
+              <p>{skill}</p>
+            ))}
+          </section>
+        </main>
+      </div>
+    </div>
   );
 };
 
