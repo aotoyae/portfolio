@@ -2,7 +2,7 @@ import ProjectCard from '../components/ProjectCard';
 
 const Project = () => {
   return (
-    <div className="flex justify-center file:gap-20 place-items-center">
+    <div className="flex gap-20 place-content-center">
       <ProjectCard
         date="24.03.26 - 04.30"
         title="뭔말easy?"
