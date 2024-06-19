@@ -28,7 +28,7 @@ const Home = () => {
         붙인다. 각급 선거관리위원회의 조직·직무범위 기타 필요한 사항은 법률로
         정한다.
       </p>
-      <div className="flex">
+      <section className="flex mb-10">
         <aside className="w-[30%] flex flex-col gap-4">
           <Link
             to="#"
@@ -41,7 +41,7 @@ const Home = () => {
           <InfoLink url="https://github.com/aotoyae">github</InfoLink>
         </aside>
         <main className="flex w-[70%] gap-4">
-          <section className="w-[70%] flex flex-col gap-20">
+          <section className="w-[70%] flex flex-col gap-14">
             <article>
               <section className="flex gap-4">
                 <h5 className="mt-6">
@@ -82,7 +82,7 @@ const Home = () => {
                 </section>
               </section>
               <section className="flex gap-4">
-                <h5 className="mt-6">2019</h5>
+                <h5>2019</h5>
                 <section>
                   <h5>제이에스벤처스 - 미디어 커머스 기업(6개월)</h5>
                   <p>
@@ -106,7 +106,7 @@ const Home = () => {
                   <p>JS, TS, React, Next.js 활용한 웹 개발 교육 이수</p>
                 </section>
               </section>
-              <section>
+              <section className="flex gap-4">
                 <h5>2022</h5>
                 <section>
                   <h5>UI/UX 반응형 웹디자인/웹퍼블리셔 교육</h5>
@@ -122,7 +122,7 @@ const Home = () => {
             ))}
           </section>
         </main>
-      </div>
+      </section>
     </div>
   );
 };
