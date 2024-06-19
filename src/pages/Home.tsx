@@ -41,16 +41,16 @@ const Home = () => {
           <InfoLink url="https://github.com/aotoyae">github</InfoLink>
         </aside>
         <main className="flex w-[70%] gap-4">
-          <section className="w-[70%]">
+          <section className="w-[70%] flex flex-col gap-20">
             <article>
-              <h4>학력</h4>
-              <section>
-                <h5>
+              <section className="flex gap-4">
+                <h5 className="mt-6">
                   2022
                   <br />
                   2017
                 </h5>
                 <section>
+                  <h4>학력</h4>
                   <h5>협성대학교 산업디자인학과</h5>
                   <p>
                     졸업전시위원회 도록팀 : 도록 레이아웃 디자인 및 인쇄 과정
@@ -65,10 +65,10 @@ const Home = () => {
               </section>
             </article>
             <article>
-              <h4>경력</h4>
-              <section>
-                <h5>2020</h5>
+              <section className="flex gap-4">
+                <h5 className="mt-6">2020</h5>
                 <section>
+                  <h4>경력</h4>
                   <h5>페이퍼먼츠 - 여성 의류 쇼핑몰(6개월)</h5>
                   <p>
                     홈페이지 배너, 상품 상세페이지 및 이벤트 쿠폰 디자인 담당
@@ -81,8 +81,8 @@ const Home = () => {
                   </p>
                 </section>
               </section>
-              <section>
-                <h5>2019</h5>
+              <section className="flex gap-4">
+                <h5 className="mt-6">2019</h5>
                 <section>
                   <h5>제이에스벤처스 - 미디어 커머스 기업(6개월)</h5>
                   <p>
@@ -98,10 +98,10 @@ const Home = () => {
               </section>
             </article>
             <article>
-              <h4>기타 활동</h4>
-              <section>
-                <h5>2023</h5>
+              <section className="flex gap-4">
+                <h5 className="mt-6">2023</h5>
                 <section>
+                  <h4>기타 활동</h4>
                   <h5>팀스파르타 내일배움캠프 프론트엔드(React) 4기</h5>
                   <p>JS, TS, React, Next.js 활용한 웹 개발 교육 이수</p>
                 </section>
