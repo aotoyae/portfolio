@@ -33,7 +33,7 @@ const Home = () => {
           <Link
             to="#"
             onClick={handleMailto}
-            className="underline underline-offset-4"
+            className="underline underline-offset-2"
           >
             aotoyae@gmail.com
           </Link>
