@@ -7,9 +7,15 @@ interface LinkProps {
 
 const InfoLink: React.FC<LinkProps> = ({ children, url }) => {
   return (
-    <Link to={url} target="_blank" className="underline underline-offset-2">
-      {children}
-    </Link>
+    <div>
+      <Link
+        to={url}
+        target="_blank"
+        className="inline-block underline underline-offset-2"
+      >
+        {children}
+      </Link>
+    </div>
   );
 };
 

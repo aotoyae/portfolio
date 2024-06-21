@@ -28,8 +28,8 @@ const Home = () => {
         붙인다. 각급 선거관리위원회의 조직·직무범위 기타 필요한 사항은 법률로
         정한다.
       </p>
-      <section className="flex mb-10">
-        <aside className="w-[30%] flex flex-col gap-4">
+      <section className="flex justify-between mb-10">
+        <aside className="flex flex-col gap-4">
           <Link
             to="#"
             onClick={handleMailto}
