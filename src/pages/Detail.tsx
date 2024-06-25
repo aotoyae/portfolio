@@ -10,13 +10,13 @@ const Detail = () => {
 
   if (!data) return <div>Data not found</div>;
 
-  const { name, links, title } = data;
+  const { name, thumbnail, links, title, subTitle, info } = data;
 
   return (
     <main>
-      <h5>{name}</h5>
-      <section>
-        <article>
+      <h3>{name}</h3>
+      <section className="flex justify-between gap-12">
+        <article className="">
           <ul>
             {links.map((link) => (
               <li>
@@ -26,7 +26,11 @@ const Detail = () => {
               </li>
             ))}
           </ul>
+          <h5>{title}</h5>
+          <p>{subTitle}</p>
+          <p>{info}</p>
         </article>
+        <img src={thumbnail} className="" />
       </section>
     </main>
   );
