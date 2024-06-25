@@ -2,7 +2,7 @@ import test_image from './images/test_img.jpeg';
 
 export const projectData = [
   {
-    id: 'mmeasy',
+    project_id: 'mmeasy',
     thumbnail: test_image,
     link: {
       url: 'https://www.mmeasy.kr/',
