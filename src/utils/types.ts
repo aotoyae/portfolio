@@ -35,6 +35,7 @@ interface Improvement {
 
 export interface DataType {
   project_id: string;
+  name: string;
   thumbnail: string;
   link: Link;
   title: string;

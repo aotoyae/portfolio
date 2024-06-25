@@ -3,6 +3,7 @@ import test_image from './images/test_img.jpeg';
 export const projectData = [
   {
     project_id: 'mmeasy',
+    name: '뭔말easy?',
     thumbnail: test_image,
     link: {
       url: 'https://www.mmeasy.kr/',
