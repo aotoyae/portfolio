@@ -1,8 +1,9 @@
-import test_image from './images/전화해.jpeg';
+import test_image from './images/test_img.jpeg';
 
 export const projectData = [
   {
     id: 'mmeasy',
+    thumbnail: test_image,
     link: {
       url: 'https://www.mmeasy.kr/',
       youtube: 'https://www.youtube.com/watch?v=6nqQ4mi-JnQ',

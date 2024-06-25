@@ -1,12 +1,5 @@
 import { Link } from 'react-router-dom';
-
-interface CardProps {
-  date: string;
-  id: string;
-  title: string;
-  info: string;
-  skill: string;
-}
+import { CardProps } from '../utils/types';
 
 const ProjectCard: React.FC<CardProps> = ({ date, id, title, info, skill }) => {
   return (

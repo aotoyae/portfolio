@@ -1,9 +1,5 @@
 import { Link } from 'react-router-dom';
-
-interface LinkProps {
-  children: string;
-  url: string;
-}
+import { LinkProps } from '../utils/types';
 
 const InfoLink: React.FC<LinkProps> = ({ children, url }) => {
   return (
