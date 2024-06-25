@@ -1,3 +1,5 @@
+import test_image from './images/전화해.jpeg';
+
 export const projectData = [
   {
     id: 'mmeasy',
@@ -15,6 +17,7 @@ export const projectData = [
       'Next.js, TypeScript, TanStack Query, Jotai, Tailwind CSS, Next UI, Supabase, NAVER 검색 API',
     feature: [
       {
+        image: test_image,
         title: '유저들이 직접 만드는 퀴즈 에디터 및 퀴즈 풀기 기능',
         info: [
           '객관식/주관식 중 원하는 문제 형식을 선택해 퀴즈 제작 가능',
@@ -22,10 +25,12 @@ export const projectData = [
         ],
       },
       {
+        image: test_image,
         title: '퀴즈 및 게시글 신고 기능 및 신고글 숨김 처리',
         info: '퀴즈나 게시글을 신고하면 정보가 DB에 담기고 관리자로 로그인 시 신고글 삭제/복구 처리 가능',
       },
       {
+        image: test_image,
         title: '전역 상태로 관리한 en / ko 다국어 기능',
         info: '사용자가 고른 언어 상태를 쿠키에 저장해 새로고침 해도 언어가 유지되도록 함',
       },
