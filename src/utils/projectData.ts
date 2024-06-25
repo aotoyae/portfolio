@@ -5,11 +5,11 @@ export const projectData = [
     project_id: 'mmeasy',
     name: '뭔말easy?',
     thumbnail: test_image,
-    link: {
-      url: 'https://www.mmeasy.kr/',
-      youtube: 'https://www.youtube.com/watch?v=6nqQ4mi-JnQ',
-      github: 'https://github.com/mm-easy/mm-easy',
-    },
+    links: [
+      { text: 'url', link: 'https://www.mmeasy.kr/' },
+      { text: 'youtube', link: 'https://www.youtube.com/watch?v=6nqQ4mi-JnQ' },
+      { text: 'github', link: 'https://github.com/mm-easy/mm-easy' },
+    ],
     title: '퀴즈와 게임을 통해 즐겁게 한국어를 학습하는 사이트',
     subTitle: '지금 이 한국어, 뭔말인지 아는 그날까지! 뭔말이지? 뭔말easy!',
     info: "'뭔말easy'는 외국인 한국어 학습자들이 한국어를 쉽고 재미있게 배울 수 있도록 돕는 서비스입니다. 사용자는 직접 한국어 퀴즈를 제작하거나 다른 사람들이 만든 퀴즈를 풀며 학습할 수 있습니다. 또한, 게임처럼 즐길 수 있는 타자 연습을 통해 한국어 타자 실력을 향상시킬 수 있습니다. 커뮤니티 페이지에서는 다른 한국어 학습자들과 소통하며 학습 동기를 높일 수 있습니다.",

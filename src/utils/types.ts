@@ -12,9 +12,8 @@ export interface CardProps {
 }
 
 interface Link {
-  url?: string;
-  youtube?: string;
-  github: string;
+  text: string;
+  link: string;
 }
 
 interface Feature {
@@ -37,7 +36,7 @@ export interface DataType {
   project_id: string;
   name: string;
   thumbnail: string;
-  link: Link;
+  links: Link[];
   title: string;
   subTitle: string;
   info: string;

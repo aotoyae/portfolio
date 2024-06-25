@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { projectData } from '../utils/projectData';
 import { DataType } from '../utils/types';
 
@@ -10,9 +10,26 @@ const Detail = () => {
 
   if (!data) return <div>Data not found</div>;
 
-  const { title } = data;
+  const { name, links, title } = data;
 
-  return <div>{title}</div>;
+  return (
+    <main>
+      <h5>{name}</h5>
+      <section>
+        <article>
+          <ul>
+            {links.map((link) => (
+              <li>
+                <Link to={link.link} target="_blank">
+                  {link.text}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </article>
+      </section>
+    </main>
+  );
 };
 
 export default Detail;
