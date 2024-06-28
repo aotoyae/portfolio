@@ -13,10 +13,10 @@ const Detail = () => {
   const { name, thumbnail, links, title, subTitle, info } = data;
 
   return (
-    <main>
+    <main className="h-full">
       <h3>{name}</h3>
       <section className="flex justify-between gap-12">
-        <article className="">
+        <article className="w-2/5">
           <ul>
             {links.map((link) => (
               <li>
@@ -30,7 +30,7 @@ const Detail = () => {
           <p>{subTitle}</p>
           <p>{info}</p>
         </article>
-        <img src={thumbnail} className="" />
+        <img src={thumbnail} className="w-3/5 h-[60vh] object-cover" />
       </section>
     </main>
   );
