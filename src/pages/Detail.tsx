@@ -21,6 +21,7 @@ const Detail = () => {
     member,
     skill,
     troubleshooting,
+    retrospect,
   } = data;
 
   return (
@@ -58,6 +59,10 @@ const Detail = () => {
             <p>{issue.info}</p>
           </article>
         ))}
+      </section>
+      <section>
+        <h3>회고</h3>
+        <p>{retrospect}</p>
       </section>
     </main>
   );
