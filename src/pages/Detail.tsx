@@ -19,7 +19,7 @@ const Detail = () => {
         <article className="w-2/5">
           <ul>
             {links.map((link) => (
-              <li>
+              <li key={link.link}>
                 <Link to={link.link} target="_blank">
                   {link.text}
                 </Link>
