@@ -10,8 +10,18 @@ const Detail = () => {
 
   if (!data) return <div>Data not found</div>;
 
-  const { name, thumbnail, links, title, subTitle, info, date, member, skill } =
-    data;
+  const {
+    name,
+    thumbnail,
+    links,
+    title,
+    subTitle,
+    info,
+    date,
+    member,
+    skill,
+    troubleshooting,
+  } = data;
 
   return (
     <main className="h-full">
@@ -38,6 +48,16 @@ const Detail = () => {
           <h5>{skill}</h5>
         </article>
         <img src={thumbnail} className="w-3/5 h-[60vh] object-cover" />
+      </section>
+      <section></section>
+      <section>
+        <h3>트러블 슈팅</h3>
+        {troubleshooting.map((issue) => (
+          <article key={issue.title}>
+            <h5>{issue.title}</h5>
+            <p>{issue.info}</p>
+          </article>
+        ))}
       </section>
     </main>
   );
