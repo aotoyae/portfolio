@@ -6,9 +6,12 @@ export const projectData = [
     name: '뭔말easy?',
     thumbnail: test_image,
     links: [
-      { text: 'url', link: 'https://www.mmeasy.kr/' },
-      { text: 'youtube', link: 'https://www.youtube.com/watch?v=6nqQ4mi-JnQ' },
-      { text: 'github', link: 'https://github.com/mm-easy/mm-easy' },
+      { text: '배포 링크', link: 'https://www.mmeasy.kr/' },
+      {
+        text: '시연 영상',
+        link: 'https://www.youtube.com/watch?v=6nqQ4mi-JnQ',
+      },
+      { text: 'Github', link: 'https://github.com/mm-easy/mm-easy' },
     ],
     title: '퀴즈와 게임을 통해 즐겁게 한국어를 학습하는 사이트',
     subTitle: '지금 이 한국어, 뭔말인지 아는 그날까지! 뭔말이지? 뭔말easy!',
