@@ -58,11 +58,15 @@ const Detail = () => {
         </section>
         <section>
           <h3>담당 기능</h3>
-          <article>
+          <article className="grid grid-cols-3 gap-3">
             {feature.map((issue) => (
               <div>
+                <img
+                  src={issue.image}
+                  alt="기능 이미지"
+                  className="object-cover w-full h-[30vh]"
+                />
                 <h5>{issue.title}</h5>
-                <img src={issue.image} alt="기능 이미지" />
                 {issue.info &&
                   (Array.isArray(issue.info) && issue.info.length >= 2 ? (
                     issue.info.map((item, idx) => <p key={idx}>{item}</p>)

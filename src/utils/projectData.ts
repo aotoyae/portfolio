@@ -39,7 +39,10 @@ export const projectData = [
         title: '전역 상태로 관리한 en / ko 다국어 기능',
         info: '사용자가 고른 언어 상태를 쿠키에 저장해 새로고침 해도 언어가 유지되도록 함',
       },
-      { title: 'Tailwind CSS를 활용한 모바일/데스크탑 반응형 UI 디자인' },
+      {
+        image: test_image,
+        title: 'Tailwind CSS를 활용한 모바일/데스크탑 반응형 UI 디자인',
+      },
     ],
     troubleshooting: [
       {
