@@ -57,7 +57,11 @@ const Detail = () => {
           {troubleshooting.map((issue) => (
             <article key={issue.title}>
               <h5>{issue.title}</h5>
-              <p className="w-2/4">{issue.info}</p>
+              {issue.info.length >= 2 ? (
+                issue.info.map((item, idx) => <p key={idx}>{item}</p>)
+              ) : (
+                <p className="w-2/4">{issue.info}</p>
+              )}
             </article>
           ))}
         </section>
