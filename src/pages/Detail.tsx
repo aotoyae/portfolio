@@ -20,6 +20,7 @@ const Detail = () => {
     date,
     member,
     skill,
+    feature,
     troubleshooting,
     retrospect,
   } = data;
@@ -49,18 +50,38 @@ const Detail = () => {
             <p className="pb-3">{member}</p>
             <h5>{skill}</h5>
           </article>
-          <img src={thumbnail} className="w-3/5 h-[60vh] object-cover" />
+          <img
+            src={thumbnail}
+            alt="페이지 썸네일"
+            className="w-3/5 h-[60vh] object-cover"
+          />
         </section>
-        <section></section>
+        <section>
+          <h3>담당 기능</h3>
+          <article>
+            {feature.map((issue) => (
+              <div>
+                <h5>{issue.title}</h5>
+                <img src={issue.image} alt="기능 이미지" />
+                {issue.info &&
+                  (Array.isArray(issue.info) && issue.info.length >= 2 ? (
+                    issue.info.map((item, idx) => <p key={idx}>{item}</p>)
+                  ) : (
+                    <p>{issue.info}</p>
+                  ))}
+              </div>
+            ))}
+          </article>
+        </section>
         <section>
           <h3>트러블 슈팅</h3>
           {troubleshooting.map((issue) => (
-            <article key={issue.title}>
+            <article key={issue.title} className="w-2/4">
               <h5>{issue.title}</h5>
               {issue.info.length >= 2 ? (
                 issue.info.map((item, idx) => <p key={idx}>{item}</p>)
               ) : (
-                <p className="w-2/4">{issue.info}</p>
+                <p>{issue.info}</p>
               )}
             </article>
           ))}
