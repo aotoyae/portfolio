@@ -173,7 +173,7 @@ export const projectData = [
     ],
     improvement: [
       {
-        title: '영화의 포스터 이미지가 제공되지 않을 경우, 대체 이미지 추가',
+        title: '영화의 포스터 이미지가 제공되지 않을 경우, 대체 이미지 표시',
         info: 'img 태그의 onerror 속성을 사용하여 이미지 로딩에 실패했을 때 표시할 이미지를 지정',
       },
       {
