@@ -75,7 +75,7 @@ export const projectData = [
   },
   {
     project_id: 'gabaedo',
-    name: '가배도?',
+    name: '가배도',
     thumbnail: test_image,
     links: [
       { text: '배포 링크', link: 'https://gabaedo.vercel.app/' },
@@ -122,6 +122,63 @@ export const projectData = [
       {
         title: '메인 페이지에 Youtube API를 활용한 카페 컨텐츠 추가',
         info: '각 카페의 Youtube 아이콘 클릭 시 해당 카페의 관련 영상 목록 표시',
+      },
+    ],
+    retrospect:
+      '국가는 과학기술의 혁신과 정보 및 인력의 개발을 통하여 국민경제의 발전에 노력하여야 한다. 누구든지 체포 또는 구속을 당한 때에는 즉시 변호인의 조력을 받을 권리를 가진다.',
+  },
+  {
+    project_id: 'watchapedia',
+    name: '왓챠피디아',
+    thumbnail: test_image,
+    links: [
+      {
+        text: '관련 포스팅',
+        link: 'https://aotoyae.tistory.com/entry/JS-%EB%82%B4%EB%B0%B0%EC%BA%A0-%EC%98%81%ED%99%94-%EA%B2%80%EC%83%89-%EC%82%AC%EC%9D%B4%ED%8A%B8-TMDB-API',
+      },
+      {
+        text: 'Github',
+        link: 'https://github.com/aotoyae/watchapedia',
+      },
+    ],
+    title: 'TMDB(영화 정보 제공 사이트) API 활용 영화 검색 사이트',
+    subTitle: '당신의 인생 영화를 왓챠피디아에서 찾아보세요!',
+    info: "'왓챠피디아'는 최신 개봉 영화의 평점과 줄거리 등 다양한 정보를 제공하는 서비스입니다. 검색창을 통해 영화 제목을 검색할 수 있으며, 스크롤을 내리면 추가 영화 데이터가 자동으로 로드됩니다. 썸네일 클릭 시 영화의 상세 페이지로 이동하여 개봉일, 명대사, 상세 줄거리 등 자세한 정보를 확인할 수 있습니다.",
+    date: '2024.01.04 - 02.04',
+    member: '프론트엔드 개발자 1',
+    skill: 'HTML, CSS, Vanilla JS, TMDB API',
+    feature: [
+      {
+        image: test_image,
+        title: 'TMDB API를 활용해 비동기 통신으로 최신 영화 데이터 불러오기',
+      },
+      {
+        image: test_image,
+        title: '썸네일 클릭 시 서브 페이지로 이동하며 영화의 상세 API 활용',
+        info: '페이지 이동 시 params로 ID를 넘겨주어 영화의 상세 정보 요청',
+      },
+      {
+        image: test_image,
+        title: '영화 목록 무한 스크롤 구현',
+        info: [
+          '스크롤이 일정 높이로 내려가면 다음 페이지의 데이터 호출',
+          'debouncing을 설정해 연속되는 이벤트 호출을 방지',
+        ],
+      },
+      {
+        image: test_image,
+        title: '검색창 아래 최근 검색 키워드 기록 추가',
+        info: '검색창 아래 검색 기록 표시, 키워드 클릭 시 자동 검색',
+      },
+    ],
+    improvement: [
+      {
+        title: '영화의 포스터 이미지가 제공되지 않을 경우, 대체 이미지 추가',
+        info: 'img 태그의 onerror 속성을 사용하여 이미지 로딩에 실패했을 때 표시할 이미지를 지정',
+      },
+      {
+        title: '스크롤 시 1 page 데이터만 불러오는 문제 해결',
+        info: '데이터 호출 URL의 쿼리스트링에 page가 중복 작성되어 생긴 문제로, 변수 설정을 해 둔 URL 구조를 수정해 오류 해결',
       },
     ],
     retrospect:
