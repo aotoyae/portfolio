@@ -44,7 +44,7 @@ export interface DataType {
   member: string;
   skill: string;
   feature: Feature[];
-  troubleshooting: Troubleshooting[];
+  troubleshooting?: Troubleshooting[];
   improvement: Improvement[];
   retrospect: string;
 }

@@ -78,19 +78,21 @@ const Detail = () => {
             ))}
           </article>
         </section>
-        <section>
-          <h3>트러블 슈팅</h3>
-          {troubleshooting.map((issue) => (
-            <article key={issue.title} className="w-2/4">
-              <h5>{issue.title}</h5>
-              {issue.info.length >= 2 ? (
-                issue.info.map((item, idx) => <p key={idx}>{item}</p>)
-              ) : (
-                <p>{issue.info}</p>
-              )}
-            </article>
-          ))}
-        </section>
+        {troubleshooting && (
+          <section>
+            <h3>트러블 슈팅</h3>
+            {troubleshooting.map((issue) => (
+              <article key={issue.title} className="w-2/4">
+                <h5>{issue.title}</h5>
+                {issue.info.length >= 2 ? (
+                  issue.info.map((item, idx) => <p key={idx}>{item}</p>)
+                ) : (
+                  <p>{issue.info}</p>
+                )}
+              </article>
+            ))}
+          </section>
+        )}
         <section>
           <h3>
             {id === 'mmeasy' ? '유저 피드백 참고 개선 사항' : '개선 사항'}
