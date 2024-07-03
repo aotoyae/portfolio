@@ -22,6 +22,7 @@ const Detail = () => {
     skill,
     feature,
     troubleshooting,
+    improvement,
     retrospect,
   } = data;
 
@@ -87,6 +88,17 @@ const Detail = () => {
               ) : (
                 <p>{issue.info}</p>
               )}
+            </article>
+          ))}
+        </section>
+        <section>
+          <h3>
+            {id === 'mmeasy' ? '유저 피드백 참고 개선 사항' : '개선 사항'}
+          </h3>
+          {improvement.map((issue) => (
+            <article key={issue.title} className="w-2/4">
+              <h5>{issue.title}</h5>
+              <p>→ {issue.info}</p>
             </article>
           ))}
         </section>

@@ -28,8 +28,8 @@ interface Troubleshooting {
 }
 
 interface Improvement {
-  title?: string;
-  info: string[];
+  title: string;
+  info: string;
 }
 
 export interface DataType {
@@ -45,6 +45,6 @@ export interface DataType {
   skill: string;
   feature: Feature[];
   troubleshooting: Troubleshooting[];
-  improvement: Improvement;
+  improvement: Improvement[];
   retrospect: string;
 }
