@@ -69,4 +69,70 @@ export const projectData = [
     retrospect:
       '국가는 과학기술의 혁신과 정보 및 인력의 개발을 통하여 국민경제의 발전에 노력하여야 한다. 누구든지 체포 또는 구속을 당한 때에는 즉시 변호인의 조력을 받을 권리를 가진다.',
   },
+  {
+    project_id: 'gabaedo',
+    name: '가배도?',
+    thumbnail: test_image,
+    links: [
+      { text: '배포 링크', link: 'https://gabaedo.vercel.app/' },
+      {
+        text: '시연 영상',
+        link: 'https://www.youtube.com/watch?v=7CeAwvu3-YU',
+      },
+      {
+        text: 'Github',
+        link: 'https://github.com/porosadporosad/GABAEDO?tab=readme-ov-file',
+      },
+    ],
+    title: '서울의 카페를 주제별로 모아보고 공유하는 사이트',
+    subTitle: '나의 취향을 가득 담은 카페 지도를 가배도(咖啡圖)로 만들어보자!',
+    info: "'가배도'는 카페를 즐겨 찾는 사람들을 위한 카테고리별 카페 지도 공유 서비스입니다. 사용자는 직접 원하는 컨셉의 지도를 만들어 카페를 추가하거나 삭제할 수 있으며, 다른 사람들이 만든 가배도를 즐겨찾기할 수 있습니다. 또한, 원하는 카페와 관련된 유튜브 영상을 통해 방문 후기를 살펴볼 수 있습니다.",
+    date: '2024.02.23 - 02.29',
+    member: '프론트엔드 개발자 5',
+    skill:
+      'React, React-Query, Axios, Styled-components, Toastify, Firebase, Kakao Map API, Youtube API',
+    feature: [
+      {
+        image: test_image,
+        title: 'useQuery를 이용해 받아온 카페 맵 데이터로 메인 페이지 구성',
+        info: [
+          'firebase에서 받아온 하나의 데이터를 filter, sort 등 컴포넌트 별로 처리를 하여 전달',
+          '공통된 데이터를 여러 방면으로 활용해 컨텐츠를 좀 더 풍부하게 하고, 사용자가 편하게 볼 수 있도록 카테고리화',
+        ],
+      },
+      {
+        image: test_image,
+        title: '지도를 가장 많이 만든 유저들의 랭킹 표시',
+        info: '카페 맵 데이터 중 지도를 만든 user id를 모아 카운트를 세고, 5위까지 보여주도록 설정',
+      },
+      {
+        image: test_image,
+        title: 'Styled-components의 props를 활용한 동적인 스타일링 적용',
+      },
+    ],
+    troubleshooting: [
+      {
+        title: '퀴즈 풀기의 사용자 답안 저장 방식과 채점 기능 개선',
+        info: [
+          "사용자가 답을 입력할 때마다 DB에서 받아온 questions 데이터에 is_correct(true/false) 값을 추가하는 방식에서→ usersAnswers 상태를 만들어 사용자의 답을 받아 저장해두고 '제출' 버튼 클릭 시 답안과 데이터를 비교해 채점하는 방식으로 변경",
+          '기존엔 사용자가 입력한 값은 알 수 없고 정답/오답 여부만 확인 가능하다는 한계점이 있었지만, 개선 후 정답/오답 여부에 따른 조건부 렌더링이 가능해졌고 채점 횟수를 줄여 효율성을 높임',
+        ],
+      },
+      {
+        title: '신고 DB table 구조 개선',
+        info: [
+          'admin(신고글), reports(신고자) 두 테이블을 사용해 최초 신고된 글이라면 admin 테이블 등록 후 reports 테이블에 신고자를 등록, 2회 이상 신고된 글이라면 reports 테이블에 신고자만 등록하는 방식에서→ 테이블을 하나로 합쳐 신고글과 신고자들을 모두 등록 후, 데이터를 받아올 때 중복 데이터를 거르는 방식으로 변경',
+          '간소화된 테이블 구조로 신고 데이터 관리가 효율적으로 개선됨',
+        ],
+      },
+    ],
+    improvement: {
+      info: [
+        '마우스로 다음 문제 버튼 클릭 → enter 키로 넘길 수 있도록 수정',
+        '정답/오답 여부, 총 점수만 알 수 있었던 결과 페이지 →️ 문제마다 원하면 정답을 볼 수 있도록 버튼 추가',
+      ],
+    },
+    retrospect:
+      '국가는 과학기술의 혁신과 정보 및 인력의 개발을 통하여 국민경제의 발전에 노력하여야 한다. 누구든지 체포 또는 구속을 당한 때에는 즉시 변호인의 조력을 받을 권리를 가진다.',
+  },
 ];
