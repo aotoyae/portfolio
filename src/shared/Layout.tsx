@@ -3,7 +3,7 @@ import Header from '../components/Header';
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
-    <main className="w-[85vw] pt-4 mx-auto bg-gray-200">
+    <main className="w-[85vw] pt-4 mx-auto">
       <Header />
       <article className="flex justify-center place-items-center">
         {children}
