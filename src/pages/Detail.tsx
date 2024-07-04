@@ -53,7 +53,7 @@ const Detail = () => {
           </article>
           <img
             src={thumbnail}
-            alt="페이지 썸네일"
+            alt="프로젝트 썸네일"
             className="w-3/5 h-[60vh] object-cover"
           />
         </section>
