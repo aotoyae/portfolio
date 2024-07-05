@@ -169,7 +169,7 @@ export const projectData = [
       {
         image: test_image,
         title: '검색창 아래 최근 검색 키워드 기록 추가',
-        info: '검색창 아래 검색 기록 표시, 키워드 클릭 시 자동 검색',
+        info: '검색 시 자동으로 키워드 추가, 키워드 클릭 시 영화 검색',
       },
     ],
     improvement: [
