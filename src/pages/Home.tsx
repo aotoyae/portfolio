@@ -40,19 +40,19 @@ const Home = () => {
           <InfoLink url="https://aotoyae.tistory.com/">blog</InfoLink>
           <InfoLink url="https://github.com/aotoyae">github</InfoLink>
         </aside>
-        <main className="flex w-[70%] gap-4">
-          <section className="w-[70%] flex flex-col gap-14">
+        <main className="flex w-[70%] gap-10">
+          <section className="w-[70%] flex flex-col gap-[5vh]">
             <article>
               <section className="flex gap-4">
-                <h5 className="mt-6">
+                <h5 className="mt-9">
                   2022
                   <br />
                   2017
                 </h5>
                 <section className="flex flex-col gap-2">
-                  <h4>학력</h4>
+                  <h4 className="pb-3">학력</h4>
                   <h5>협성대학교 산업디자인학과</h5>
-                  <p>
+                  <p className="leading-tight">
                     졸업전시위원회 도록팀 : 도록 레이아웃 디자인 및 인쇄 과정
                     담당
                     <br />
@@ -65,12 +65,12 @@ const Home = () => {
               </section>
             </article>
             <article>
-              <section className="flex gap-4">
-                <h5 className="mt-6">2020</h5>
+              <section className="flex gap-4 pb-2">
+                <h5 className="mt-9">2020</h5>
                 <section className="flex flex-col gap-2">
-                  <h4>경력</h4>
+                  <h4 className="pb-3">경력</h4>
                   <h5>페이퍼먼츠 - 여성 의류 쇼핑몰(6개월)</h5>
-                  <p>
+                  <p className="leading-tight">
                     홈페이지 배너, 상품 상세페이지 및 이벤트 쿠폰 디자인 담당
                     <br />
                     시즌별 상품 홍보를 위한 배너 디자인
@@ -85,7 +85,7 @@ const Home = () => {
                 <h5>2019</h5>
                 <section className="flex flex-col gap-2">
                   <h5>제이에스벤처스 - 미디어 커머스 기업(6개월)</h5>
-                  <p>
+                  <p className="leading-tight">
                     제품 광고를 위한 바이럴 영상의 기획 및 연출 담당
                     <br />
                     SNS 광고 영상
@@ -98,10 +98,10 @@ const Home = () => {
               </section>
             </article>
             <article>
-              <section className="flex gap-4">
-                <h5 className="mt-6">2023</h5>
+              <section className="flex gap-4 pb-2">
+                <h5 className="mt-9">2023</h5>
                 <section className="flex flex-col gap-2">
-                  <h4>기타 활동</h4>
+                  <h4 className="pb-3">기타 활동</h4>
                   <h5>팀스파르타 내일배움캠프 프론트엔드(React) 4기</h5>
                   <p>JS, TS, React, Next.js 활용한 웹 개발 교육 이수</p>
                 </section>
