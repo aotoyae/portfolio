@@ -1,4 +1,3 @@
-import test_image from './images/test_img.jpeg';
 import gabaedo_thumbnail from './images/gabaedo/gabaedo_thumbnail.png';
 import mmeasy_thumbnail from './images/mmeasy/mmeasy_thumbnail.png';
 import watchapedia_thumbnail from './images/watchapedia/watchapedia_thumbnail.png';
