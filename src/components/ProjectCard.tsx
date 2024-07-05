@@ -12,7 +12,7 @@ const ProjectCard: React.FC<CardProps> = ({ date, id, title, info, skill }) => {
   const { thumbnail } = data;
 
   return (
-    <article className="w-[25%] relative group flex flex-col gap-2">
+    <article className="w-[27%] relative group flex flex-col gap-2">
       <h6>{date}</h6>
       <Link to={`/project/${id}`}>
         <h1 className="pb-4 text-2xl underline cursor-pointer underline-offset-2">
