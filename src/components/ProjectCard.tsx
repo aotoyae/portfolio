@@ -24,7 +24,7 @@ const ProjectCard: React.FC<CardProps> = ({ date, id, title, info, skill }) => {
       <img
         src={thumbnail}
         alt="프로젝트 썸네일"
-        className="fixed z-[-1] hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 group-hover:block"
+        className="fixed z-[-1] hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 group-hover:block w-1/2 h-auto object-cover"
       />
     </article>
   );

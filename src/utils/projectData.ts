@@ -1,10 +1,13 @@
 import test_image from './images/test_img.jpeg';
+import gabaedo_thumbnail from './images/gabaedo/gabaedo_thumbnail.png';
+import mmeasy_thumbnail from './images/mmeasy/mmeasy_thumbnail.png';
+import watchapedia_thumbnail from './images/watchapedia/watchapedia_thumbnail.png';
 
 export const projectData = [
   {
     project_id: 'mmeasy',
     name: '뭔말easy?',
-    thumbnail: test_image,
+    thumbnail: mmeasy_thumbnail,
     links: [
       { text: '배포 링크', link: 'https://www.mmeasy.kr/' },
       {
@@ -76,7 +79,7 @@ export const projectData = [
   {
     project_id: 'gabaedo',
     name: '가배도',
-    thumbnail: test_image,
+    thumbnail: gabaedo_thumbnail,
     links: [
       { text: '배포 링크', link: 'https://gabaedo.vercel.app/' },
       {
@@ -131,7 +134,7 @@ export const projectData = [
   {
     project_id: 'watchapedia',
     name: '왓챠피디아',
-    thumbnail: test_image,
+    thumbnail: watchapedia_thumbnail,
     links: [
       {
         text: '관련 포스팅',
