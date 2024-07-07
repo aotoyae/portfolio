@@ -65,7 +65,7 @@ const Detail = () => {
                 <img
                   src={issue.image}
                   alt="기능 이미지"
-                  className="object-contain w-full h-[30vh] border-solid border-y border-[#2a83ee]"
+                  className={`object-contain w-full h-[30vh] border-solid border-y ${id == 'mmeasy' ? 'border-[#2a83ee]' : 'border-[#dcbaa3]'}`}
                 />
                 <h5 className="pt-5 pb-2">{issue.title}</h5>
                 {issue.info &&
