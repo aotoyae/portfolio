@@ -118,7 +118,7 @@ const Detail = () => {
         </section>
         <section>
           <h3 className="pb-6">회고</h3>
-          <p>{retrospect}</p>
+          <p className="leading-tight">{retrospect}</p>
         </section>
       </div>
     </main>
