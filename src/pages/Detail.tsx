@@ -67,7 +67,7 @@ const Detail = () => {
                   alt="기능 이미지"
                   className={`object-contain w-full h-[30vh] border-solid border-y ${id == 'mmeasy' ? 'border-[#2a83ee]' : id == 'gabaedo' ? 'border-[#dcbaa3]' : 'border-[#ff90b4]'}`}
                 />
-                <h5 className="pt-5 pb-2">{issue.title}</h5>
+                <h5 className="pt-5 pb-2 font-semibold">{issue.title}</h5>
                 {issue.info &&
                   (Array.isArray(issue.info) && issue.info.length >= 2 ? (
                     issue.info.map((item, idx) => (
@@ -88,7 +88,7 @@ const Detail = () => {
             <article className="flex flex-col gap-10">
               {troubleshooting.map((issue) => (
                 <div key={issue.title} className="w-2/4">
-                  <h5 className="pb-4">{issue.title}</h5>
+                  <h5 className="pb-4 font-semibold">{issue.title}</h5>
                   {issue.info.length >= 2 ? (
                     issue.info.map((item, idx) => (
                       <p key={idx} className="pb-4 leading-tight">
@@ -103,7 +103,7 @@ const Detail = () => {
             </article>
           </section>
         )}
-        <section>
+        <section className={`${id !== 'mmeasy' && 'mt-[-64px]'}`}>
           <h3 className="pb-6">
             {id === 'mmeasy' ? '유저 피드백 참고 개선 사항' : '개선 사항'}
           </h3>
