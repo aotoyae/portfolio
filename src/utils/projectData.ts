@@ -1,7 +1,7 @@
 import gabaedo_thumbnail from './images/gabaedo/gabaedo_thumbnail.png';
 import mmeasy_thumbnail from './images/mmeasy/mmeasy_thumbnail.png';
 import watchapedia_thumbnail from './images/watchapedia/watchapedia_thumbnail.png';
-import watchapedia_feature_1 from './images/watchapedia/feature_1.png';
+// import watchapedia_feature_1 from './images/watchapedia/feature_1.png';
 import watchapedia_feature_2 from './images/watchapedia/feature_2.png';
 import watchapedia_feature_3 from './images/watchapedia/feature_3.gif';
 import watchapedia_feature_4 from './images/watchapedia/feature_4.png';
@@ -164,7 +164,7 @@ export const projectData = [
     skill: 'HTML, CSS, Vanilla JS, TMDB API',
     feature: [
       {
-        image: watchapedia_feature_1,
+        image: watchapedia_thumbnail,
         title: 'TMDB API를 활용해 비동기 통신으로 최신 영화 데이터 불러오기',
       },
       {
