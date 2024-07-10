@@ -84,7 +84,7 @@ export const projectData = [
       },
     ],
     retrospect:
-      '기획 시 테이블 구조를 효율적으로 설계하는 것의 중요성을 느꼈습니다. 또한, 팀원들과 꾸준히 스크럼과 태스크 관리를 진행한 덕분에 기간 내에 모두가 만족할 만한 결과물을 낼 수 있었습니다.',
+      'CSR과 SSR을 혼합하여 사용함으로써 검색 엔진 최적화(SEO)를 향상시켰으며, TypeScript를 사용해 데이터에 정적 타입을 지정하여 프로그램의 안전성과 효율성을 높였습니다.',
   },
   {
     project_id: 'gabaedo',
@@ -140,7 +140,7 @@ export const projectData = [
       },
     ],
     retrospect:
-      '기획 단계에서 데이터들을 어떻게 연결 지어야 할지에 대해 어려움을 겪었지만, 팀원들과 잘 소통하여 개발 과정이 순조롭게 진행되었고 이를 통해 기획의 중요성을 깨달을 수 있었습니다.',
+      'React Query를 사용한 상태 관리 덕분에 보일러 플레이트 코드를 줄일 수 있었으며, 로딩 및 에러 상태를 쉽게 처리할 수 있어 매우 유용했습니다.',
   },
   {
     project_id: 'watchapedia',
@@ -166,6 +166,7 @@ export const projectData = [
       {
         image: watchapedia_thumbnail,
         title: 'TMDB API를 활용해 비동기 통신으로 최신 영화 데이터 불러오기',
+        info: 'async/await를 사용해 서버에 비동기로 데이터 요청',
       },
       {
         image: watchapedia_feature_2,
@@ -197,6 +198,6 @@ export const projectData = [
       },
     ],
     retrospect:
-      'API를 통해 데이터를 요청하고 화면을 내가 원하는 대로 구성하는 과정에서 큰 재미를 느꼈습니다. 또한, 여러 기능을 추가하고 개선해 나가면서 성취감을 느낄 수 있었습니다.',
+      '비동기 통신을 통해 영화 데이터를 효율적으로 가져올 수 있었으며, 무한 스크롤과 디바운싱 기법을 활용하여 성능을 향상시키고 사용자 경험(UX)을 개선할 수 있었습니다.',
   },
 ];
