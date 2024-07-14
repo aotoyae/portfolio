@@ -42,14 +42,14 @@ const Detail = () => {
               ))}
             </ul>
             <h5 className="pb-7">{title}</h5>
-            <p className="pb-16 leading-tight">
+            <p className="pb-16 leading-normal">
               {subTitle}
               <br />
               {info}
             </p>
             <p className="pb-2">{date}</p>
             <p className="pb-3">{member}</p>
-            <h5 className="leading-tight">{skill}</h5>
+            <h5 className="leading-normal">{skill}</h5>
           </article>
           <img
             src={thumbnail}
@@ -71,12 +71,12 @@ const Detail = () => {
                 {issue.info &&
                   (Array.isArray(issue.info) && issue.info.length >= 2 ? (
                     issue.info.map((item, idx) => (
-                      <p key={idx} className="leading-tight">
+                      <p key={idx} className="leading-normal">
                         {item}
                       </p>
                     ))
                   ) : (
-                    <p className="leading-tight">{issue.info}</p>
+                    <p className="leading-normal">{issue.info}</p>
                   ))}
               </div>
             ))}
@@ -91,12 +91,12 @@ const Detail = () => {
                   <h5 className="pb-4 font-semibold">{issue.title}</h5>
                   {issue.info.length >= 2 ? (
                     issue.info.map((item, idx) => (
-                      <p key={idx} className="pb-4 leading-tight">
+                      <p key={idx} className="pb-4 leading-normal">
                         {item}
                       </p>
                     ))
                   ) : (
-                    <p className="leading-tight">{issue.info}</p>
+                    <p className="leading-normal">{issue.info}</p>
                   )}
                 </div>
               ))}
@@ -109,7 +109,7 @@ const Detail = () => {
           </h3>
           <article className="flex flex-col gap-4">
             {improvement.map((issue) => (
-              <div key={issue.title} className="w-2/4 leading-tight">
+              <div key={issue.title} className="w-2/4 leading-normal">
                 <h5>{issue.title}</h5>
                 <p>→ {issue.info}</p>
               </div>
@@ -118,7 +118,7 @@ const Detail = () => {
         </section>
         <section>
           <h3 className="pb-6">회고</h3>
-          <p className="leading-tight">{retrospect}</p>
+          <p className="leading-normal">{retrospect}</p>
         </section>
       </div>
     </main>

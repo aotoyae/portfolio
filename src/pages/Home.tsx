@@ -20,7 +20,7 @@ const Home = () => {
 
   return (
     <div className="flex pt-[3vh] flex-col justify-start h-[calc(100vh-32px)] gap-[10vh]">
-      <p className="pl-[30%] leading-tight">
+      <p className="pl-[30%] leading-normal">
         프론트엔드 개발자로서 다양한 프로젝트에서 쌓은 경험을 바탕으로, 사용자
         중심의 애플리케이션을 개발하는 것을 목표로 하고 있습니다. 효율적인 상태
         관리를 통해 로컬, 전역, 서버 상태 데이터를 체계적으로 관리하고 유지하여,
@@ -53,7 +53,7 @@ const Home = () => {
                 <section className="flex flex-col gap-2">
                   <h4 className="pb-3">학력</h4>
                   <h5>협성대학교 산업디자인학과</h5>
-                  <p className="leading-tight">
+                  <p className="leading-normal">
                     졸업전시위원회 도록팀 : 도록 레이아웃 디자인 및 인쇄 과정
                     담당
                     <br />
@@ -71,7 +71,7 @@ const Home = () => {
                 <section className="flex flex-col gap-2">
                   <h4 className="pb-3">경력</h4>
                   <h5>페이퍼먼츠 - 여성 의류 쇼핑몰(6개월)</h5>
-                  <p className="leading-tight">
+                  <p className="leading-normal">
                     홈페이지 배너, 상품 상세페이지 및 이벤트 쿠폰 디자인 담당
                     <br />
                     시즌별 상품 홍보를 위한 배너 디자인
@@ -86,7 +86,7 @@ const Home = () => {
                 <h5>2019</h5>
                 <section className="flex flex-col gap-2">
                   <h5>제이에스벤처스 - 미디어 커머스 기업(6개월)</h5>
-                  <p className="leading-tight">
+                  <p className="leading-normal">
                     제품 광고를 위한 바이럴 영상의 기획 및 연출 담당
                     <br />
                     SNS 광고 영상
