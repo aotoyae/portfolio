@@ -161,7 +161,7 @@ export const projectData = [
     info: "'왓챠피디아'는 최신 개봉 영화의 평점과 줄거리 등 다양한 정보를 제공하는 서비스입니다. 검색창을 통해 영화 제목을 검색할 수 있으며, 스크롤을 내리면 추가 영화 데이터가 자동으로 로드됩니다. 썸네일 클릭 시 영화의 상세 페이지로 이동하여 개봉일, 명대사, 상세 줄거리 등 자세한 정보를 확인할 수 있습니다.",
     date: '2024.01.04 - 02.04',
     member: '프론트엔드 개발자 1',
-    skill: 'HTML, CSS, Vanilla JS, TMDB API',
+    skill: 'HTML, CSS, JavaScript, TMDB API',
     feature: [
       {
         image: watchapedia_thumbnail,
