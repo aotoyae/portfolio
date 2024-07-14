@@ -23,7 +23,7 @@ const Project = () => {
           id="watchapedia"
           title="Watchapedia"
           info="TMDB(영화 정보 제공 사이트) API 활용 영화 검색 사이트"
-          skill="HTML, CSS, Vanilla JS, TMDB API"
+          skill="HTML, CSS, JavaScript, TMDB API"
         />
       </div>
     </section>
