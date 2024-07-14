@@ -10,7 +10,7 @@ const Home = () => {
     'TypeScirpt',
     'React',
     'Redux',
-    'Tanstack Query',
+    'React Query',
     'Styled-Commponents',
     'Tailwind CSS',
     'Next.js',
