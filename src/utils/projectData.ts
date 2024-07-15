@@ -37,20 +37,17 @@ export const projectData = [
       {
         image: mmeasy_feature_1,
         title: '유저들이 직접 만드는 퀴즈 에디터 및 퀴즈 풀기 기능',
-        info: [
-          '객관식/주관식 중 원하는 문제 형식을 선택해 퀴즈 제작 가능',
-          '답안 제출 시 총 점수와 문제별 정답/오답 확인 가능',
-        ],
+        info: '퀴즈 제작 시 객관식과 주관식 중 원하는 문제 형식을 선택할 수 있습니다. 퀴즈를 풀면 TanStackQuery를 통해 서버에서 받아온 퀴즈 데이터와 useState로 저장된 유저의 답안을 비교하여 채점을 진행합니다.',
       },
       {
         image: mmeasy_feature_2,
         title: '퀴즈 및 게시글 신고 기능 및 신고글 숨김 처리',
-        info: '퀴즈나 게시글을 신고하면 정보가 DB에 담기고 관리자로 로그인 시 신고글 삭제/복구 처리 가능',
+        info: '퀴즈나 게시글을 신고하면 해당 정보가 데이터베이스에 저장됩니다. 관리자로 로그인하여 신고된 글의 삭제 버튼을 클릭 시 deleted_at 컬럼에 값이 입력되어 글이 숨김 처리됩니다.',
       },
       {
         image: mmeasy_feature_3,
         title: '전역 상태로 관리한 en/ko 다국어 기능',
-        info: '사용자가 고른 언어 상태를 쿠키에 저장해 새로고침 해도 언어가 유지되도록 함',
+        info: '유저가 선택한 언어를 Jotai를 사용해 전역 상태로 관리하고, 이 상태를 쿠키에 저장하여 새로고침 시에도 언어가 그대로 유지되도록 하였습니다.',
       },
       {
         image: mmeasy_feature_4,
@@ -112,20 +109,17 @@ export const projectData = [
       {
         image: gabaedo_feature_1,
         title: 'useQuery를 이용해 받아온 카페 맵 데이터로 메인 페이지 구성',
-        info: [
-          'firebase에서 받아온 하나의 데이터를 filter, sort 등 컴포넌트 별로 처리를 하여 전달',
-          '공통된 데이터를 여러 방면으로 활용해 컨텐츠를 좀 더 풍부하게 하고, 사용자가 편하게 볼 수 있도록 카테고리화',
-        ],
+        info: 'firebase에서 받아온 하나의 데이터를 filter, sort 등 컴포넌트 별로 처리를 해 전달하여 공통된 데이터를 여러 방면으로 활용해 컨텐츠를 좀 더 풍부하게 하고, 사용자가 편하게 볼 수 있도록 카테고리화하였습니다.',
       },
       {
         image: gabaedo_feature_2,
         title: '지도를 가장 많이 만든 유저들의 랭킹 표시',
-        info: '카페 맵 데이터 중 지도를 만든 user id를 모아 카운트를 세고, 5위까지 보여주도록 설정',
+        info: '카페 맵 데이터 중 지도를 만든 user id를 모아 카운트를 세고, 5위까지 보여주도록 설정하였습니다.',
       },
       {
         image: gabaedo_feature_3,
         title: '메인 페이지에 Youtube API를 활용한 카페 컨텐츠 추가',
-        info: '각 카페의 Youtube 아이콘 클릭 시 해당 카페의 관련 영상 목록 표시',
+        info: '각 카페의 Youtube 아이콘 클릭 시 해당 카페의 관련 영상 목록 표시합니다.',
       },
     ],
     improvement: [
@@ -166,25 +160,24 @@ export const projectData = [
       {
         image: watchapedia_thumbnail,
         title: 'TMDB API를 활용해 비동기 통신으로 최신 영화 데이터 불러오기',
-        info: 'async/await를 사용해 서버에 비동기로 데이터 요청',
+        info: 'async/await를 사용해 서버에 비동기로 데이터를 요청합니다.',
       },
       {
         image: watchapedia_feature_2,
         title: '썸네일 클릭 시 서브 페이지로 이동하며 영화의 상세 API 활용',
-        info: '페이지 이동 시 params로 ID를 넘겨주어 영화의 상세 정보 요청',
+        info: '페이지 이동 시 params로 ID를 넘겨주어 영화의 상세 정보를 요청합니다.',
       },
       {
         image: watchapedia_feature_3,
         title: '영화 목록 무한 스크롤 구현',
         info: [
-          '스크롤이 일정 높이로 내려가면 다음 페이지의 데이터 호출',
-          'debouncing을 설정해 연속되는 이벤트 호출을 방지',
+          '스크롤이 일정 높이로 내려가면 다음 페이지의 데이터를 호출하고, debouncing을 설정하여 연속되는 이벤트 호출을 방지합니다.',
         ],
       },
       {
         image: watchapedia_feature_4,
         title: '검색창 아래 최근 검색 키워드 기록 추가',
-        info: '검색 시 자동으로 키워드 추가, 키워드 클릭 시 영화 검색',
+        info: '검색 시 자동으로 검색 기록이 남겨지고 키워드 클릭 시 영화가 검색됩니다.',
       },
     ],
     improvement: [
