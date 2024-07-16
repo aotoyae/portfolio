@@ -139,13 +139,13 @@ export const projectData = [
     ],
     improvement: [
       {
-        title: 'Styled-components의 props 활용',
-        info: '하나의 컴포넌트에 여러 props를 내려주어 다양하고 동적인 스타일링 활용',
+        title:
+          '마이페이지에서 프로필 이미지 변경 시 다른 페이지에도 실시간으로 반영되도록 수정',
+        info: 'Query Invaildation을 이용해 기존 쿼리를 무효화한 후 최신화시켜 모든 페이지에서 프로필 이미지가 즉시 업데이트되도록 개선하였습니다.',
       },
       {
-        title:
-          '프로필 이미지나 닉네임 변경 시 다른 페이지에도 실시간으로 적용되도록 수정',
-        info: 'Query Invalidation을 이용해 기존의 쿼리를 무효화시켜 최신 데이터 표시',
+        title: '로그인한 유저만 지도를 제작할 수 있도록 조건부 렌더링 적용',
+        info: '현재 유저가 로그인한 상태인지 확인하고, 로그인된 유저에게만 지도 제작 버튼을 표시합니다.',
       },
     ],
     retrospect:
