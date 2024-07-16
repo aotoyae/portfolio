@@ -20,7 +20,7 @@ const ProjectCard: React.FC<CardProps> = ({ date, id, title, info, skill }) => {
         </h1>
       </Link>
       <h5 className="pb-1">{info}</h5>
-      <p>{skill}</p>
+      <p className="leading-tight">{skill}</p>
       <img
         src={thumbnail}
         alt="프로젝트 썸네일"
