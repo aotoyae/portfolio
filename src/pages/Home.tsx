@@ -108,7 +108,7 @@ const Home = () => {
               </section>
               <section className="flex gap-4">
                 <h5>2022</h5>
-                <section>
+                <section className="flex flex-col gap-2">
                   <h5>UI/UX 반응형 웹디자인/웹퍼블리셔 교육</h5>
                   <p>HTML, CSS 활용한 웹 디자인 교육 이수</p>
                 </section>
