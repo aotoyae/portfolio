@@ -11,10 +11,11 @@ const Home = () => {
     'React',
     'Redux',
     'React Query',
+    'Next.js',
+    'Zustand',
+    'Jotai',
     'Styled-Commponents',
     'Tailwind CSS',
-    'Next.js',
-    'Jotai',
     'Jira',
   ];
 
