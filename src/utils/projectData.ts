@@ -116,18 +116,25 @@ export const projectData = [
     feature: [
       {
         image: gabaedo_feature_1,
-        title: 'useQuery를 이용해 받아온 카페 맵 데이터로 메인 페이지 구성',
-        info: 'firebase에서 받아온 하나의 데이터를 filter, sort 등 컴포넌트 별로 처리를 해 전달하여 공통된 데이터를 여러 방면으로 활용해 컨텐츠를 좀 더 풍부하게 하고, 사용자가 편하게 볼 수 있도록 카테고리화하였습니다.',
+        title: '카테고리별로 카페 맵을 살펴볼 수 있는 가배도 모아보기',
+        info: 'React Query를 사용하여 데이터베이스에서 받아온 단일 데이터를 filter 및 sort 등의 처리를 거쳐 각 컴포넌트에 전달하였습니다. 이를 통해 공통 데이터를 여러 방식으로 활용하여 사이트의 콘텐츠를 더욱 다양하고 유용하게 구성하였습니다.',
       },
       {
         image: gabaedo_feature_2,
-        title: '지도를 가장 많이 만든 유저들의 랭킹 표시',
-        info: '카페 맵 데이터 중 지도를 만든 user id를 모아 카운트를 세고, 5위까지 보여주도록 설정하였습니다.',
+        title:
+          '지도를 가장 많이 만든 유저들의 랭킹을 표시하여 사용자 활동 시각화',
+        info: 'forEach를 사용하여 카페 맵 데이터에서 지도를 만든 사용자 ID의 카운트를 세고, 이를 기반으로 순위를 매겨 상위 5위까지 표시하도록 설정하였습니다.',
       },
       {
         image: gabaedo_feature_3,
-        title: '메인 페이지에 Youtube API를 활용한 카페 컨텐츠 추가',
-        info: '각 카페의 Youtube 아이콘 클릭 시 해당 카페의 관련 영상 목록 표시합니다.',
+        title:
+          'Youtube API를 활용해 각 카페의 아이콘 클릭 시 관련 영상 목록 표시',
+        info: '특정 카페의 YouTube 아이콘을 클릭하면, useEffect가 변경된 카페 이름을 인식하고 useState에 새로운 유튜브 영상 데이터가 저장됩니다. 이후 리렌더링이 발생하여 우측에 해당 카페의 관련 영상 목록이 표시됩니다.',
+      },
+      {
+        image: gabaedo_feature_3,
+        title: 'Styled-components의 스타일링 및 Props 활용',
+        info: '스타일이 중복되는 컴포넌트를 재사용하고, Props를 통해 조건부로 동적인 스타일링을 적용하여 컴포넌트의 유연성과 재사용성을 향상시켰습니다.',
       },
     ],
     improvement: [
