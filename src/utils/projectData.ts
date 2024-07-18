@@ -1,17 +1,17 @@
 import gabaedo_thumbnail from './images/gabaedo/gabaedo_thumbnail.png';
 import mmeasy_thumbnail from './images/mmeasy/mmeasy_thumbnail.png';
 import watchapedia_thumbnail from './images/watchapedia/watchapedia_thumbnail.png';
-// import watchapedia_feature_1 from './images/watchapedia/feature_1.png';
-import watchapedia_feature_2 from './images/watchapedia/feature_2.png';
-import watchapedia_feature_3 from './images/watchapedia/feature_3.gif';
-import watchapedia_feature_4 from './images/watchapedia/feature_4.png';
-import gabaedo_feature_1 from './images/gabaedo/feature_1.gif';
-import gabaedo_feature_2 from './images/gabaedo/feature_2.gif';
-import gabaedo_feature_3 from './images/gabaedo/feature_3.gif';
 import mmeasy_feature_1 from './images/mmeasy/feature_1.png';
 import mmeasy_feature_2 from './images/mmeasy/feature_2.png';
 import mmeasy_feature_3 from './images/mmeasy/feature_3.png';
 import mmeasy_feature_4 from './images/mmeasy/feature_4.png';
+import gabaedo_feature_1 from './images/gabaedo/feature_1.gif';
+import gabaedo_feature_2 from './images/gabaedo/feature_2.gif';
+import gabaedo_feature_3 from './images/gabaedo/feature_3.gif';
+import watchapedia_feature_1 from './images/watchapedia/feature_1.png';
+import watchapedia_feature_2 from './images/watchapedia/feature_2.png';
+import watchapedia_feature_3 from './images/watchapedia/feature_3.gif';
+import watchapedia_feature_4 from './images/watchapedia/feature_4.gif';
 
 export const projectData = [
   {
@@ -173,7 +173,7 @@ export const projectData = [
     skill: 'HTML, CSS, JavaScript, TMDB API',
     feature: [
       {
-        image: watchapedia_thumbnail,
+        image: watchapedia_feature_1,
         title: 'TMDB API를 활용해 비동기 통신으로 최신 영화 데이터 불러오기',
         info: 'async/await를 사용해 최신 영화 데이터를 비동기적으로 불러옵니다. 서버와의 통신을 비동기적으로 처리해 사용자는 부드럽고 끊김 없는 경험을 할 수 있습니다.',
       },
