@@ -1,10 +1,11 @@
 import gabaedo_thumbnail from './images/gabaedo/gabaedo_thumbnail.png';
 import mmeasy_thumbnail from './images/mmeasy/mmeasy_thumbnail.png';
 import watchapedia_thumbnail from './images/watchapedia/watchapedia_thumbnail.png';
-import mmeasy_feature_1 from './images/mmeasy/feature_1.png';
-import mmeasy_feature_2 from './images/mmeasy/feature_2.png';
-import mmeasy_feature_3 from './images/mmeasy/feature_3.png';
-import mmeasy_feature_4 from './images/mmeasy/feature_4.png';
+import mmeasy_feature_1 from './images/mmeasy/feature_1.gif';
+import mmeasy_feature_2 from './images/mmeasy/feature_2.gif';
+import mmeasy_feature_3 from './images/mmeasy/feature_3.gif';
+import mmeasy_feature_4 from './images/mmeasy/feature_4.gif';
+import mmeasy_feature_5 from './images/mmeasy/feature_5.gif';
 import gabaedo_feature_1 from './images/gabaedo/feature_1.gif';
 import gabaedo_feature_2 from './images/gabaedo/feature_2.gif';
 import gabaedo_feature_3 from './images/gabaedo/feature_3.gif';
@@ -41,22 +42,22 @@ export const projectData = [
         info: '난이도와 객관식/주관식 중 원하는 문제 형식을 선택해 퀴즈를 제작할 수 있습니다. 문제마다 이미지를 첨부할 수 있으며, 객관식 문제는 최대 5개까지 선택지 추가가 가능합니다.',
       },
       {
-        image: mmeasy_feature_1,
+        image: mmeasy_feature_2,
         title: '퀴즈 풀기와 채점 및 정답/오답 조건부 렌더링',
         info: '퀴즈를 풀면 TanStackQuery를 통해 서버에서 받아온 퀴즈 데이터와 useState로 저장된 유저의 답안을 비교하여 채점을 진행합니다. 유저가 제출한 답안이 정답이면 파란색, 오답이면 빨간색으로 표시됩니다.',
       },
       {
-        image: mmeasy_feature_2,
+        image: mmeasy_feature_3,
         title: '퀴즈 및 게시글 신고 기능 및 신고글 숨김 처리',
         info: '퀴즈나 게시글을 신고하면 해당 정보가 데이터베이스에 저장됩니다. 관리자로 로그인하여 신고된 글의 삭제 버튼을 클릭하면 deleted_at 컬럼에 값이 입력되어 글이 숨김 처리됩니다.',
       },
       {
-        image: mmeasy_feature_3,
+        image: mmeasy_feature_4,
         title: '전역 상태로 관리한 en/ko 다국어 기능',
         info: '유저가 선택한 언어를 Jotai를 사용해 전역 상태로 관리하고, 이 상태를 쿠키에 저장하여 새로고침 시에도 언어가 그대로 유지되도록 하였습니다.',
       },
       {
-        image: mmeasy_feature_4,
+        image: mmeasy_feature_5,
         title: 'Tailwind CSS를 활용한 반응형 UI 디자인',
         info: '모바일과 데스크탑에서 모두 최적화된 반응형 디자인을 구현하였습니다. 이를 통해 사용자가 다양한 기기에서 적절한 레이아웃과 스타일을 경험할 수 있도록 하여, 사용자 만족도를 크게 향상시켰습니다.',
       },
