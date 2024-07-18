@@ -59,7 +59,7 @@ const Detail = () => {
         </section>
         <section>
           <h3 className="pb-6">담당 기능</h3>
-          <article className="grid grid-cols-3 gap-3">
+          <article className="grid grid-cols-3 gap-3 leading-normal">
             {feature.map((issue) => (
               <div key={issue.title} className="pb-16">
                 <img
@@ -71,13 +71,9 @@ const Detail = () => {
                 <h5 className="pt-5 pb-2 font-semibold">{issue.title}</h5>
                 {issue.info &&
                   (Array.isArray(issue.info) && issue.info.length >= 2 ? (
-                    issue.info.map((item, idx) => (
-                      <p key={idx} className="leading-normal">
-                        {item}
-                      </p>
-                    ))
+                    issue.info.map((item, idx) => <p key={idx}>{item}</p>)
                   ) : (
-                    <p className="leading-normal">{issue.info}</p>
+                    <p>{issue.info}</p>
                   ))}
               </div>
             ))}
