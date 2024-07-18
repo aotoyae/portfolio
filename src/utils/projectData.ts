@@ -8,6 +8,7 @@ import mmeasy_feature_4 from './images/mmeasy/feature_4.png';
 import gabaedo_feature_1 from './images/gabaedo/feature_1.gif';
 import gabaedo_feature_2 from './images/gabaedo/feature_2.gif';
 import gabaedo_feature_3 from './images/gabaedo/feature_3.gif';
+import gabaedo_feature_4 from './images/gabaedo/feature_4.png';
 import watchapedia_feature_1 from './images/watchapedia/feature_1.png';
 import watchapedia_feature_2 from './images/watchapedia/feature_2.png';
 import watchapedia_feature_3 from './images/watchapedia/feature_3.gif';
@@ -132,7 +133,7 @@ export const projectData = [
         info: '특정 카페의 YouTube 아이콘을 클릭하면, useEffect가 변경된 카페 이름을 인식하고 useState에 새로운 유튜브 영상 데이터가 저장됩니다. 이후 리렌더링이 발생하여 우측에 해당 카페의 관련 영상 목록이 표시됩니다.',
       },
       {
-        image: gabaedo_feature_3,
+        image: gabaedo_feature_4,
         title: 'Styled-components의 스타일링 및 Props 활용',
         info: '스타일이 중복되는 컴포넌트를 재사용하고, Props를 통해 조건부로 동적인 스타일링을 적용하여 컴포넌트의 유연성과 재사용성을 향상시켰습니다.',
       },
