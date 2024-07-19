@@ -46,11 +46,10 @@ const Home = () => {
           <section className="w-[70%] flex flex-col gap-[5vh]">
             <article>
               <section className="flex gap-4">
-                <h5 className="mt-9">
-                  2022
-                  <br />
-                  2017
-                </h5>
+                <div className="mt-9">
+                  <h5 className="pb-2">2022</h5>
+                  <h5>2017</h5>
+                </div>
                 <section className="flex flex-col gap-2">
                   <h4 className="pb-3">학력</h4>
                   <h5>협성대학교 산업디자인학과</h5>
