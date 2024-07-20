@@ -58,7 +58,7 @@ const Detail = () => {
           />
         </section>
         <section>
-          <h3 className="pb-6">담당 기능</h3>
+          <h3 className="pb-6 font-semibold">담당 기능</h3>
           <article className="grid grid-cols-3 gap-3 leading-normal">
             {feature.map((issue) => (
               <div key={issue.title} className="pb-16">
@@ -81,7 +81,7 @@ const Detail = () => {
         </section>
         {troubleshooting && (
           <section className="mt-[-64px]">
-            <h3 className="pb-6">트러블 슈팅</h3>
+            <h3 className="pb-6 font-semibold">트러블 슈팅</h3>
             <article className="flex flex-col gap-10">
               {troubleshooting.map((issue) => (
                 <div key={issue.title} className="w-2/4">
@@ -101,7 +101,7 @@ const Detail = () => {
           </section>
         )}
         <section className={`${id !== 'mmeasy' && 'mt-[-64px]'}`}>
-          <h3 className="pb-6">
+          <h3 className="pb-6 font-semibold">
             {id === 'mmeasy' ? '유저 피드백 참고 개선 사항' : '개선 사항'}
           </h3>
           <article className="flex flex-col gap-4">
@@ -114,7 +114,7 @@ const Detail = () => {
           </article>
         </section>
         <section>
-          <h3 className="pb-6">회고</h3>
+          <h3 className="pb-6 font-semibold">회고</h3>
           <p className="leading-normal">{retrospect}</p>
         </section>
       </div>
