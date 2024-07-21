@@ -3,6 +3,11 @@ import { handleMailto } from '../utils/handleMailto';
 import useMenuStore from '../store/store';
 
 const Header = () => {
+  const menus = [
+    { id: 'sohyeon kim', link: '/' },
+    { id: 'project', link: '/project' },
+    { id: 'contact', link: '#', onClick: handleMailto },
+  ];
   const { selectedMenu, setSelectedMenu } = useMenuStore();
 
   const handleMenuClick = (menu: string) => {
@@ -11,26 +16,17 @@ const Header = () => {
 
   return (
     <ul className="flex gap-6">
-      <li
-        onClick={() => handleMenuClick('sohyeon kim')}
-        className={`${selectedMenu === 'sohyeon kim' && 'underline'} hover:underline underline-offset-1`}
-      >
-        <Link to="/">sohyeon kim</Link>
-      </li>
-      <li
-        onClick={() => handleMenuClick('project')}
-        className="hover:underline underline-offset-1"
-      >
-        <Link to="/project">project</Link>
-      </li>
-      <li
-        onClick={() => handleMenuClick('contact')}
-        className="hover:underline underline-offset-1"
-      >
-        <Link to="#" onClick={handleMailto}>
-          contact
-        </Link>
-      </li>
+      {menus.map((menu, idx) => (
+        <li
+          key={idx}
+          onClick={() => handleMenuClick(menu.id)}
+          className={`${selectedMenu === menu.id && 'underline'} hover:underline underline-offset-1`}
+        >
+          <Link to={menu.link} {...(menu.onClick && { onClick: menu.onClick })}>
+            {menu.id}
+          </Link>
+        </li>
+      ))}
     </ul>
   );
 };
