@@ -1,3 +1,8 @@
+export interface Menu {
+  selectedMenu: string;
+  setSelectedMenu: (selectedMenu: string) => void;
+}
+
 export interface LinkProps {
   children: string;
   url: string;
