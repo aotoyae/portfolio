@@ -108,8 +108,8 @@ const Home = () => {
           </section>
           <section className="flex flex-col gap-5">
             <h4>스킬</h4>
-            {skills.map((skill) => (
-              <p>{skill}</p>
+            {skills.map((skill, idx) => (
+              <p key={idx}>{skill}</p>
             ))}
           </section>
         </main>
