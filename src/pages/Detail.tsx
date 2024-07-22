@@ -42,11 +42,8 @@ const Detail = () => {
               ))}
             </ul>
             <h5 className="pb-7">{title}</h5>
-            <p className="pb-16 leading-normal">
-              {subTitle}
-              <br />
-              {info}
-            </p>
+            <h5 className="pb-2 italic">{subTitle}</h5>
+            <p className="pb-16 leading-normal">{info}</p>
             <p className="pb-2">{date}</p>
             <p className="pb-3">{member}</p>
             <h5 className="leading-normal">{skill}</h5>
