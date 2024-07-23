@@ -102,12 +102,19 @@ const Detail = () => {
             {id === 'mmeasy' ? '유저 피드백 참고 개선 사항' : '개선 사항'}
           </h3>
           <article className="flex flex-col gap-4">
-            {improvement.map((issue) => (
-              <div key={issue.title} className="w-2/4 leading-normal">
-                <h5>{issue.title}</h5>
-                <p>→ {issue.info}</p>
+            {improvement.length >= 2 ? (
+              improvement.map((issue) => (
+                <div key={issue.title} className="w-2/4 leading-normal">
+                  <h5>{issue.title}</h5>
+                  <p>→ {issue.info}</p>
+                </div>
+              ))
+            ) : (
+              <div className="w-2/4 leading-normal">
+                <h5>{improvement[0].title}</h5>
+                <p>→ {improvement[0].info}</p>
               </div>
-            ))}
+            )}
           </article>
         </section>
         <section>
