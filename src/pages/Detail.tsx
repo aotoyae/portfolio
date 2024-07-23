@@ -102,7 +102,7 @@ const Detail = () => {
             {id === 'mmeasy' ? '유저 피드백 참고 개선 사항' : '개선 사항'}
           </h3>
           <article className="flex flex-col gap-4">
-            {improvement.length >= 2 ? (
+            {Array.isArray(improvement) ? (
               improvement.map((issue) => (
                 <div key={issue.title} className="w-2/4 leading-normal">
                   <h5>{issue.title}</h5>
@@ -111,8 +111,8 @@ const Detail = () => {
               ))
             ) : (
               <div className="w-2/4 leading-normal">
-                <h5>{improvement[0].title}</h5>
-                <p>→ {improvement[0].info}</p>
+                <h5>{improvement.title}</h5>
+                <p>→ {improvement.info}</p>
               </div>
             )}
           </article>

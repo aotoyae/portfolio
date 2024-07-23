@@ -50,6 +50,6 @@ export interface DataType {
   skill: string;
   feature: Feature[];
   troubleshooting?: Troubleshooting[];
-  improvement: Improvement[];
+  improvement: Improvement | Improvement[];
   retrospect: string;
 }
