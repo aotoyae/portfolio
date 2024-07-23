@@ -67,7 +67,7 @@ const Detail = () => {
                 />
                 <h5 className="pt-5 pb-2 font-semibold">{issue.title}</h5>
                 {issue.info &&
-                  (Array.isArray(issue.info) && issue.info.length >= 2 ? (
+                  (Array.isArray(issue.info) ? (
                     issue.info.map((item, idx) => <p key={idx}>{item}</p>)
                   ) : (
                     <p>{issue.info}</p>
