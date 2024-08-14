@@ -126,7 +126,7 @@ export const projectData = [
       {
         image: gabaedo_feature_1,
         title: '카테고리별로 카페 맵을 살펴볼 수 있는 가배도 모아보기',
-        info: 'React Query를 사용하여 데이터베이스에서 받아온 단일 데이터를 filter 및 sort 등의 처리를 거쳐 각 컴포넌트에 전달하였습니다. 이를 통해 공통 데이터를 여러 방식으로 활용하여 사이트의 콘텐츠를 더욱 다양하고 유용하게 구성하였습니다.',
+        info: 'React Query를 통해 DB에서 받아온 단일 데이터를 filter 및 sort 등의 처리를 거쳐 각 컴포넌트에 전달하였습니다. 이를 통해 공통 데이터를 여러 방식으로 활용하여 메인 페이지의 콘텐츠를 더욱 다양하고 유용하게 구성하였습니다.',
       },
       {
         image: gabaedo_feature_2,
@@ -138,7 +138,7 @@ export const projectData = [
         image: gabaedo_feature_3,
         title:
           'Youtube API를 활용해 각 카페의 아이콘 클릭 시 관련 영상 목록 표시',
-        info: '특정 카페의 YouTube 아이콘을 클릭하면, useEffect가 변경된 카페 이름을 인식하고 useState에 새로운 유튜브 영상 데이터가 저장됩니다. 이후 리렌더링이 발생하여 우측에 해당 카페의 관련 영상 목록이 표시됩니다.',
+        info: '카페 리스트에서 특정 카페의 YouTube 아이콘을 클릭하면, useEffect가 변경된 카페 이름을 감지하고 로컬 상태에 새로운 YouTube 영상 데이터를 저장합니다. 이로 인해 우측에 해당 카페의 관련 영상 목록이 표시됩니다.',
       },
       {
         image: gabaedo_feature_4,
@@ -154,7 +154,7 @@ export const projectData = [
       },
       {
         title: '로그인한 유저만 지도를 제작할 수 있도록 조건부 렌더링 적용',
-        info: '현재 유저가 로그인한 상태인지 확인하여, 로그인된 유저에게만 지도 제작 버튼을 표시하도록 조건부 렌더링을 적용합니다.',
+        info: 'Firebase의 auth를 이용해 현재 유저의 로그인 상태를 확인하고, 로그인된 유저에게만 지도 제작 버튼이 표시되도록 하였습니다.',
       },
     ],
     retrospect:
