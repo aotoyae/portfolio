@@ -39,7 +39,7 @@ export const projectData = [
       {
         image: mmeasy_feature_1,
         title: '유저들이 직접 만드는 퀴즈 에디터',
-        info: '난이도와 객관식/주관식 중 원하는 문제 형식을 선택해 퀴즈를 제작할 수 있습니다. 문제마다 이미지를 첨부할 수 있으며, 객관식 문제는 최대 5개까지 선택지 추가가 가능합니다.',
+        info: 'question(퀴즈북에 있는 문제), options(객관식 문제의 선택지) 순으로 데이터를 업로드합니다. mutateAsync를 사용하여 ID를 받아와 각 데이터를 연결하였습니다.',
       },
       {
         image: mmeasy_feature_2,
@@ -49,12 +49,12 @@ export const projectData = [
       {
         image: mmeasy_feature_3,
         title: '퀴즈 및 게시글 신고 기능 및 신고글 숨김 처리',
-        info: '퀴즈나 게시글을 신고하면 해당 정보가 데이터베이스에 저장됩니다. 관리자로 로그인하여 신고된 글의 삭제 버튼을 클릭하면 deleted_at 컬럼에 값이 입력되어 글이 숨김 처리됩니다.',
+        info: '퀴즈나 게시글이 신고되면 해당 정보가 DB에 저장됩니다. 관리자로 로그인하여 신고된 글의 삭제 버튼 클릭 시 deleted_at 컬럼에 값이 입력되고, 데이터를 조회할 때 deleted_at 값이 null인 데이터만 가져와 글이 숨김 처리되도록 구현하였습니다.',
       },
       {
         image: mmeasy_feature_4,
         title: '전역 상태로 관리한 en/ko 다국어 기능',
-        info: '유저가 선택한 언어를 Jotai를 사용해 전역 상태로 관리하고, 이 상태를 쿠키에 저장하여 새로고침 시에도 언어가 그대로 유지되도록 하였습니다.',
+        info: '유저가 선택한 언어를 Jotai를 사용해 전역 상태로 관리하고, 이 상태를 쿠키에 저장하여 새로고침 시에도 언어 설정이 유지되도록 구현했습니다. Header의 언어 토글을 클릭하면 store의 langType이 변경되며, 이에 따라 해당 언어에 맞는 단어들이 자동으로 적용됩니다.',
       },
       {
         image: mmeasy_feature_5,
@@ -63,6 +63,13 @@ export const projectData = [
       },
     ],
     troubleshooting: [
+      {
+        title: 'useRef를 이용한 DOM 접근 대신 input과 label 연결',
+        info: [
+          '파일 첨부 버튼을 숨기기 위해 이전에는 useRef를 사용하여 input 태그에 접근하고, input 상위의 div 태그를 클릭할 시 해당 클릭 이벤트를 함수로 전달하는 방식을 사용했습니다. 그러나 이 상황에서 useRef를 통해서만 DOM 요소에 직접 접근해야 하는지에 대한 의문이 들었습니다.',
+          '개선된 방식으로 useRef를 사용하지 않고, 시맨틱 태그의 속성을 활용해 input의 id와 label의 for 속성을 연결했습니다. 이를 통해 label을 클릭하면 hidden 상태의 input이 실행되도록 구현했습니다.',
+        ],
+      },
       {
         title: '퀴즈 풀기의 사용자 답안 저장 방식과 채점 기능 개선',
         info: [
