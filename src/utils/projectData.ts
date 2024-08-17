@@ -42,6 +42,11 @@ export const projectData = [
         info: 'question(퀴즈북에 있는 문제), options(객관식 문제의 선택지) 순으로 데이터를 업로드합니다. mutateAsync를 사용하여 ID를 받아와 각 데이터를 연결하였습니다.',
       },
       {
+        image: mmeasy_feature_1,
+        title: '퀴즈 문제 페이지네이션',
+        info: '문제 풀이 시, 각 문제를 한 페이지씩 표시하고, 답안 제출 후 결과를 확인할 때는 모든 문제를 한 페이지에 표시할 수 있도록 resultMode와 pageMode 값을 생성했습니다. 이를 로컬 상태와 문제의 인덱스 값을 활용하여 구현하였습니다.',
+      },
+      {
         image: mmeasy_feature_2,
         title: '퀴즈 풀기와 채점 및 정답/오답 조건부 렌더링',
         info: '퀴즈를 풀면 TanStackQuery를 통해 서버에서 받아온 퀴즈 데이터와 useState로 저장된 유저의 답안을 비교하여 채점을 진행합니다. 유저가 제출한 답안이 정답이면 파란색, 오답이면 빨간색으로 표시됩니다.',
