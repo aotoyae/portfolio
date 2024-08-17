@@ -10,7 +10,7 @@ const Home = () => {
     'TypeScirpt',
     'React',
     'Redux',
-    'React Query',
+    'TanStack Query',
     'Next.js',
     'Zustand',
     'Jotai',
