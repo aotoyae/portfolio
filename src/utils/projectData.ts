@@ -6,6 +6,7 @@ import mmeasy_feature_2 from './images/mmeasy/feature_2.gif';
 import mmeasy_feature_3 from './images/mmeasy/feature_3.gif';
 import mmeasy_feature_4 from './images/mmeasy/feature_4.gif';
 import mmeasy_feature_5 from './images/mmeasy/feature_5.gif';
+import mmeasy_feature_6 from './images/mmeasy/feature_6.gif';
 import gabaedo_feature_1 from './images/gabaedo/feature_1.gif';
 import gabaedo_feature_2 from './images/gabaedo/feature_2.gif';
 import gabaedo_feature_3 from './images/gabaedo/feature_3.gif';
@@ -42,27 +43,27 @@ export const projectData = [
         info: 'question(퀴즈북에 있는 문제), options(객관식 문제의 선택지) 순으로 데이터를 업로드합니다. mutateAsync를 사용하여 ID를 받아와 각 데이터를 연결하였습니다.',
       },
       {
-        image: mmeasy_feature_1,
+        image: mmeasy_feature_2,
         title: '퀴즈 문제 페이지네이션',
         info: '문제 풀이 시, 각 문제를 한 페이지씩 표시하고, 답안 제출 후 결과를 확인할 때는 모든 문제를 한 페이지에 표시할 수 있도록 resultMode와 pageMode 값을 생성했습니다. 이를 로컬 상태와 문제의 인덱스 값을 활용하여 구현하였습니다.',
       },
       {
-        image: mmeasy_feature_2,
+        image: mmeasy_feature_3,
         title: '퀴즈 풀기와 채점 및 정답/오답 조건부 렌더링',
         info: '퀴즈를 풀면 TanStackQuery를 통해 서버에서 받아온 퀴즈 데이터와 useState로 저장된 유저의 답안을 비교하여 채점을 진행합니다. 유저가 제출한 답안이 정답이면 파란색, 오답이면 빨간색으로 표시됩니다.',
       },
       {
-        image: mmeasy_feature_3,
+        image: mmeasy_feature_4,
         title: '퀴즈 및 게시글 신고 기능 및 신고글 숨김 처리',
         info: '퀴즈나 게시글이 신고되면 해당 정보가 DB에 저장됩니다. 관리자로 로그인하여 신고된 글의 삭제 버튼 클릭 시 deleted_at 컬럼에 값이 입력되고, 데이터를 조회할 때 deleted_at 값이 null인 데이터만 가져와 글이 숨김 처리되도록 구현하였습니다.',
       },
       {
-        image: mmeasy_feature_4,
+        image: mmeasy_feature_5,
         title: '전역 상태로 관리한 en/ko 다국어 기능',
         info: '유저가 선택한 언어를 Jotai를 사용해 전역 상태로 관리하고, 이 상태를 쿠키에 저장하여 새로고침 시에도 언어 설정이 유지되도록 구현했습니다. Header의 언어 토글을 클릭하면 store의 langType이 변경되며, 이에 따라 해당 언어에 맞는 단어들이 자동으로 적용됩니다.',
       },
       {
-        image: mmeasy_feature_5,
+        image: mmeasy_feature_6,
         title: 'Tailwind CSS를 활용한 반응형 UI 디자인',
         info: '모바일과 데스크탑에서 모두 최적화된 반응형 디자인을 구현하였습니다. 이를 통해 사용자가 다양한 기기에서 적절한 레이아웃과 스타일을 경험할 수 있도록 하여, 사용자 만족도를 크게 향상시켰습니다.',
       },
