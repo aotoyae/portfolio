@@ -121,7 +121,7 @@ export const projectData = [
     date: '2024.02.23 - 02.29',
     member: '프론트엔드 개발자 5',
     skill:
-      'React, React-Query, Axios, Styled-components, Toastify, Firebase, Kakao Map API, Youtube API',
+      'React, React Query, Axios, Styled-components, Toastify, Firebase, Kakao Map API, Youtube API',
     feature: [
       {
         image: gabaedo_feature_1,
