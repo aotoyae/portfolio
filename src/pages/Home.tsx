@@ -4,23 +4,24 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   const skills = [
-    'HTML',
-    'CSS',
+    'HTML / CSS',
     'JavaScript',
-    'TypeScirpt',
+    'TypeScript',
     'React',
-    'Redux',
-    'TanStack Query',
     'Next.js',
+    'Redux',
+    'React Query',
     'Zustand',
     'Jotai',
+    'D3.js',
     'Styled-Commponents',
     'Tailwind CSS',
     'Jira',
+    'Figma',
   ];
 
   return (
-    <div className="flex pt-[3vh] flex-col justify-start h-[calc(100vh-32px)] gap-[10vh]">
+    <div className="flex pt-[3vh] flex-col justify-start h-[calc(100vh-32px)] gap-[8vh]">
       <p className="pl-[30%] leading-normal">
         산업디자인 전공자로서 소비자 니즈를 분석해 제품을 기획하고 디자인하는
         경험을 쌓아왔습니다. 이러한 경험을 바탕으로 디지털 환경에서도 사용자
